@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №7 - Завдання 1</title>
+</head>
+<body bgcolor="#FFE4E1">
+
+<h2 align="center">Форма реєстрації студента</h2>
+
+<form action="success.htm" method="get" target="_blank">
+
+    <p>Ваше ім'я:</p>
+    <input type="text" name="name" size="40" maxlength="40">
+
+    <p>Ваш пароль:</p>
+    <input type="password" name="password" size="30" maxlength="20">
+
+    <p>Ваша стать:</p>
+    <input type="radio" name="gender" value="male"> Чоловіча
+    <input type="radio" name="gender" value="female"> Жіноча
+
+    <p>На якому курсі Ви навчаєтесь?</p>
+    <select name="course">
+        <option value="1">Перший</option>
+        <option value="2">Другий</option>
+        <option value="3">Третій</option>
+        <option value="4">Четвертий</option>
+        <option value="5">П'ятий</option>
+    </select>
+
+    <p>Які дисципліни Ви вивчаєте?</p>
+    <input type="checkbox" name="html" checked> HTML<br>
+    <input type="checkbox" name="css"> CSS<br>
+    <input type="checkbox" name="javascript"> JavaScript<br>
+    <input type="checkbox" name="database"> Бази даних<br>
+    <input type="checkbox" name="python"> Python<br>
+
+    <p>Напишіть декілька слів про себе:</p>
+    <textarea name="about" rows="6" cols="50"></textarea>
+
+    <p>Прикріпіть файл:</p>
+    <input type="file" name="document">
+
+    <p>
+        <input type="button" value="Показати дату"
+               onclick="alert(new Date().toLocaleDateString('uk-UA'))">
+    </p>
+
+    <p>
+        <input type="submit" value="Відправити дані">
+        <input type="reset" value="Очистити форму">
+    </p>
+
+</form>
+
+</body>
+</html>
