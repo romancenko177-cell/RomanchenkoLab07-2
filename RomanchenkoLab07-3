@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №7 - Анкета</title>
+</head>
+<body bgcolor="#E6E6FA">
+
+<h2 align="center">Анкета студента</h2>
+
+<form action="success.htm" method="get" target="_blank">
+
+    <fieldset>
+        <legend>Особисті дані</legend>
+
+        <p>Прізвище:</p>
+        <input type="text" name="surname" size="40">
+
+        <p>Ім'я:</p>
+        <input type="text" name="firstname" size="40">
+
+        <p>По батькові:</p>
+        <input type="text" name="patronymic" size="40">
+
+        <p>Дата народження:</p>
+        <input type="date" name="birthday">
+
+        <p>Стать:</p>
+        <input type="radio" name="gender" value="male"> Чоловіча
+        <input type="radio" name="gender" value="female"> Жіноча
+
+        <p>Електронна пошта:</p>
+        <input type="email" name="email" size="40">
+
+        <p>Номер телефону:</p>
+        <input type="tel" name="phone" size="30">
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Інформація про навчання</legend>
+
+        <p>Навчальний заклад:</p>
+        <input type="text" name="university" size="50">
+
+        <p>Спеціальність:</p>
+        <input type="text" name="specialty" size="50">
+
+        <p>Курс навчання:</p>
+        <select name="course">
+            <option value="1">1 курс</option>
+            <option value="2">2 курс</option>
+            <option value="3">3 курс</option>
+            <option value="4">4 курс</option>
+            <option value="5">5 курс</option>
+        </select>
+
+        <p>Форма навчання:</p>
+        <input type="radio" name="study" value="full"> Денна
+        <input type="radio" name="study" value="part"> Заочна
+
+        <p>Які предмети Вам подобаються?</p>
+        <input type="checkbox" name="math"> Математика<br>
+        <input type="checkbox" name="informatics"> Інформатика<br>
+        <input type="checkbox" name="english"> Англійська мова<br>
+        <input type="checkbox" name="physics"> Фізика<br>
+        <input type="checkbox" name="programming"> Програмування<br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Додаткова інформація</legend>
+
+        <p>Ваші захоплення:</p>
+        <textarea name="hobby" rows="4" cols="50"></textarea>
+
+        <p>Ваші плани на майбутнє:</p>
+        <textarea name="plans" rows="4" cols="50"></textarea>
+
+        <p>Додати фотографію:</p>
+        <input type="file" name="photo" accept="image/*">
+
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Відправити анкету">
+    <input type="reset" value="Очистити анкету">
+
+</form>
+
+</body>
+</html>
